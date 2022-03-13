@@ -29,7 +29,7 @@ module.exports = {
                     { name: `\u200B`, value: `\u200B`, inline: true},
                     { name: `ID:`, value: `ID is: ${user.id}`, inline: true}
                 )
-                .setImage("attachment://Lidl.png")
+                .setThumbnail("attachment://Lidl.png")
                 .setTimestamp()
                 await interaction.reply({ embeds: [userEmbed], files: [file]})
             } else {
@@ -44,7 +44,7 @@ module.exports = {
                     { name: `\u200B`, value: `\u200B`, inline: true},
                     { name: `Your ID:`, value: `Your ID is: ${interaction.user.id}`, inline: true},
                 )
-                .setImage("attachment://Lidl.png")
+                .setThumbnail("attachment://Lidl.png")
                 .setTimestamp()
                 await interaction.reply({ embeds: [selfEmbed], files: [file1]})
             }
@@ -58,7 +58,7 @@ module.exports = {
                     { name: `\u200B`, value: `\u200B`, inline: true},
                     { name: `Total Members:`, value: `The total member count is: ${interaction.guild.memberCount}`, inline: true},
                 )
-                .setImage("attachment://Lidl.png")
+                .setThumbnail("attachment://Lidl.png")
                 .setTimestamp()
             await interaction.reply({ embeds: [serverEmbed], files: [file2]});
         }

@@ -19,5 +19,6 @@ module.exports = {
                     { name: `\u200b`, value: `commands`},
                     { name: `\u200b`, value: `invite`},
                     { name: `\u200b`, value: `group`},
+                    { name: `\u200b`, value: `game`},
                 )
                 .setTimestamp()
